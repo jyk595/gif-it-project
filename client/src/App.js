@@ -11,7 +11,7 @@ import Homepage from './Components/Pages/Homepage';
 import UserRoute from './Components/Routes/UserRoute';
 
 function App() {
-  const [user, setUser] = useState("false");
+  const [user, setUser] = useState(false);
 
   useEffect(()=>{
     fetch('/me')

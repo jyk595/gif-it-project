@@ -8,9 +8,6 @@ import ProfilePage from '../Pages/ProfilePage';
 
 function UserRoute({ user }) {
   const { username } = useParams();
-
-  console.log(username)
-  console.log(user)
   
   return(
     <>
