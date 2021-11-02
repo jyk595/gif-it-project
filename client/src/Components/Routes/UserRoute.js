@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Switch,
   Route,
@@ -8,6 +9,7 @@ import ProfilePage from '../Pages/ProfilePage';
 
 function UserRoute({ user }) {
   const { username } = useParams();
+  const [gifList, setGifList] = useState([]);
   
   return(
     <>
@@ -20,6 +22,8 @@ function UserRoute({ user }) {
         <ProfilePage
           user={user}
           username={username}
+          gifList={gifList}
+          setGifList={setGifList}
         />
       </Route>
       </Switch>
